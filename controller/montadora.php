@@ -23,12 +23,11 @@ function get($consulta, $valor=''){
 } 
 
 function post($dados_montadora){
-    $montadora = new Montadora();
-    $viewMontadora = new viewMontadora();
+    $montadora                    = new Montadora();
+    $viewMontadora                = new viewMontadora();
     $montadora->nome              = $dados_montadora->nome;
     $montadora->logotipo          = $dados_montadora->logotipo;
-
-    $viewVeviewMontadoraiculo->exibirMonatdora($montadora->cadastrar());
+    $viewMontadora->exibirMontadora($montadora->cadastrar());
 }
 
 switch($method){    
